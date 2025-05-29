@@ -2,7 +2,7 @@ import { MainNavItem } from "@/types"
 
 export const siteConfig = {
   name: "Darrick Develops",
-  wordmark: "</> Darrick Develops",
+  brackets: "</>",
   description: "Friendly dev help for agencies and local businesses",
   url: "https://darrickdevelops.com",
   xHandle: "",
