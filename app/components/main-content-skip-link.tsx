@@ -1,4 +1,4 @@
-export default function MainContentSkipLink() {
+export function MainContentSkipLink() {
   return (
     <a
       href="#main-content"

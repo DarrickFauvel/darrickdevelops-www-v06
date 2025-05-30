@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { siteConfig } from "@/config/site"
 
-export default function Logo() {
+export function Logo() {
   return (
     <Link
       className="font-bold flex gap-1.5"
