@@ -2,9 +2,9 @@ import "./globals.css"
 
 import { Geist, Geist_Mono } from "next/font/google"
 
-import Footer from "./components/footer"
-import Header from "./components/header"
-import MainContentSkipLink from "./components/main-content-skip-link"
+import { Footer } from "./components/footer"
+import { Header } from "./components/header"
+import { MainContentSkipLink } from "./components/main-content-skip-link"
 import type { Metadata } from "next"
 import { ThemeProvider } from "./components/theme-provider"
 import { siteConfig } from "@/config/site"
