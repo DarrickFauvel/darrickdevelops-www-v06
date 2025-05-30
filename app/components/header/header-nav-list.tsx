@@ -1,4 +1,4 @@
-import { IconMenu } from "../icons/icon-menu"
+import { MobileMenu } from "./mobile-menu"
 import { NavItem } from "../nav-list/nav-item"
 import { siteMainNavItems } from "@/config/site"
 
@@ -9,8 +9,9 @@ export function HeaderNavList() {
 
   return (
     <>
-      <IconMenu />
-      <ul className="flex gap-4">{navListContent}</ul>
+      <MobileMenu navListContent={navListContent} />
+
+      <ul className="sm:flex gap-4 hidden">{navListContent}</ul>
     </>
   )
 }

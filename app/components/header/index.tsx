@@ -9,8 +9,10 @@ export function Header() {
         className="flex justify-between items-center"
         aria-label="Main navigation">
         <Logo />
-        <ModeToggle />
-        <HeaderNavList />
+        <span className="flex gap-4 items-center">
+          <ModeToggle />
+          <HeaderNavList />
+        </span>
       </nav>
     </header>
   )
