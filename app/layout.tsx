@@ -6,6 +6,7 @@ import Footer from "./components/footer"
 import Header from "./components/header"
 import MainContentSkipLink from "./components/main-content-skip-link"
 import type { Metadata } from "next"
+import { ThemeProvider } from "./components/theme-provider"
 import { siteConfig } from "@/config/site"
 
 const geistSans = Geist({
@@ -29,18 +30,21 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <MainContentSkipLink />
-
-        <div className="grid grid-rows-[20px_1fr_20px] items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-          <Header />
-
-          {children}
-
-          <Footer />
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange>
+          <MainContentSkipLink />
+          <div className="grid grid-rows-[20px_1fr_20px] items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
