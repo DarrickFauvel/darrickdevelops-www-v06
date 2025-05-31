@@ -120,3 +120,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Select close button in mobile menu */
+[data-slot="sheet-header"] ~ button {
+  padding: 0.5rem;
+  margin-top: -0.25rem;
+}

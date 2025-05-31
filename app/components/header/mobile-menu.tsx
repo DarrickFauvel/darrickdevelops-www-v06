@@ -22,13 +22,13 @@ export function MobileMenu({
     <div className="sm:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline">
+          <Button variant="outline" className="px-2">
             <IconMenu />
           </Button>
         </SheetTrigger>
         <SheetContent className="w-auto ps-4 pe-10">
           <SheetHeader>
-            <SheetTitle>{/* Edit profile */}</SheetTitle>
+            <SheetTitle>{/* Menu */}</SheetTitle>
             <SheetDescription>
               {/* Make changes to your profile here. Click save when you&apos;re
                 done. */}
