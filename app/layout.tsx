@@ -39,7 +39,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
           <MainContentSkipLink />
-          <div className="grid grid-rows-[20px_1fr_20px] items-center min-h-screen px-2 pt-4 pb-8 gap-16 sm:px-4 sm:pt-8 md:px-8 font-[family-name:var(--font-geist-sans)]">
+          <div className="grid grid-rows-[20px_1fr_20px] min-h-screen px-2 pt-4 pb-8 gap-16 sm:px-4 sm:pt-8 md:px-8 font-[family-name:var(--font-geist-sans)]">
             <Header />
             {children}
             <Footer />
