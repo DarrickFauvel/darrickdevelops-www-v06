@@ -3,11 +3,9 @@ import { FooterNavList } from "../footer/footer-nav-list"
 
 export function Footer() {
   return (
-    <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center md:justify-between">
-      <nav>
-        <FooterNavList />
-      </nav>
+    <footer className="row-start-3 flex flex-wrap-reverse gap-[24px] items-center justify-center sm:justify-between">
       <Copyright />
+      <FooterNavList />
     </footer>
   )
 }
