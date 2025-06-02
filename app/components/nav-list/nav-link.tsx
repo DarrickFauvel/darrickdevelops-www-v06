@@ -3,10 +3,12 @@ type NavLinkProps = {
   children: React.ReactNode
 }
 
-export default function NavLink({ item }: { item: MainNavItem }) {
+export default function NavLink({ href, children }: NavLinkProps) {
   return (
-    <a href={item.href} className="">
-      {item.title}
+    <a
+      href={href}
+      className="px-3 py-2 underline-offset-4 hover:underline focus:underline">
+      {children}
     </a>
   )
 }
