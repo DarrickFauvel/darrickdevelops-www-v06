@@ -11,7 +11,7 @@ export function HeaderNavList() {
     <>
       <MobileMenu navListContent={navListContent} />
 
-      <ul className="sm:flex gap-4 hidden">{navListContent}</ul>
+      <ul className="sm:flex hidden">{navListContent}</ul>
     </>
   )
 }
