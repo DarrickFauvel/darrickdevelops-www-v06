@@ -34,9 +34,7 @@ export function MobileMenu({
                 done. */}
             </SheetDescription>
           </SheetHeader>
-          <div className="grid flex-1 auto-rows-min gap-6 px-4">
-            {navListContent}
-          </div>
+          <ul className="px-4 flex flex-col gap-4">{navListContent}</ul>
           {/* <SheetFooter>
               <Button type="submit">Save changes</Button>
               <SheetClose asChild>
