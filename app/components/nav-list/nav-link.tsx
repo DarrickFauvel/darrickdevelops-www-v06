@@ -1,4 +1,7 @@
-import { MainNavItem } from "@/types"
+type NavLinkProps = {
+  href: string
+  children: React.ReactNode
+}
 
 export default function NavLink({ item }: { item: MainNavItem }) {
   return (
