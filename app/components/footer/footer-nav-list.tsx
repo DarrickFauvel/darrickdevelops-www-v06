@@ -8,7 +8,7 @@ export function FooterNavList() {
 
   return (
     <nav>
-      <ul className="flex gap-4 text-xs">{navListItems}</ul>
+      <ul className="flex text-xs">{navListItems}</ul>
     </nav>
   )
 }
