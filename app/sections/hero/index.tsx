@@ -1,3 +1,5 @@
+import { Meteors } from "@/components/ui/meteors"
+
 export function Hero() {
   return (
     <section id="hero">
@@ -13,6 +15,8 @@ export function Hero() {
           writing clean, inclusive code that works for everyone.
         </p>
       </div>
+
+      <Meteors number={20} />
     </section>
   )
 }
