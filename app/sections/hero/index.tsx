@@ -1,8 +1,9 @@
 import { Meteors } from "@/components/ui/meteors"
+import PageSection from "@/app/components/page-section"
 
 export function Hero() {
   return (
-    <section id="hero">
+    <PageSection sectionId="hero">
       <div className="flex flex-col gap-4">
         <h1 className="text-3xl">Hi, I&apos;m Darrick. 👋</h1>
         <p>
@@ -17,6 +18,6 @@ export function Hero() {
       </div>
 
       <Meteors number={20} />
-    </section>
+    </PageSection>
   )
 }
