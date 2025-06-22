@@ -2,17 +2,22 @@
 
 import { useRouter } from "next/navigation"
 
-export default function BackLink({ children }) {
+type BackLinkProps = {
+  sectionId: string
+  children: React.ReactNode
+}
+
+export default function BackLink({ sectionId, children }: BackLinkProps) {
   const router = useRouter()
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     router.back()
   }
 
   return (
     <a
-      href="/#portfolio"
+      href={`/#${sectionId}`}
       className="text-blue-500 hover:underline"
       onClick={handleClick}
     >
